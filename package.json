@@ -1,16 +1,16 @@
 {
   "name": "todolist-v1",
   "version": "1.0.0",
-  "description": "",
+  "description": "CRUD app",
   "main": "app.js",
   "engines": {
     "node": "16.14.2",
-    "npm":  "8.5.0"
-    },
+    "npm": "8.5.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "SSK",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -19,5 +19,21 @@
     "loadash": "^1.0.0",
     "lodash": "^4.17.21",
     "mongoose": "^6.5.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingSlayer-KS/to-do.git"
+  },
+  "keywords": [
+    "CRUD",
+    "MongoDB",
+    "Node",
+    "Express",
+    "EJS"
+  ],
+  "bugs": {
+    "url": "https://github.com/KingSlayer-KS/to-do/issues"
+  },
+  "homepage": "https://github.com/KingSlayer-KS/to-do#readme"
 }
