@@ -1,4 +1,3 @@
-//jshint esversion:6
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -51,7 +50,7 @@ const defaultItems=[i1,i2,i3];
 app.get("/", function(req, res) {
 
   Item.find({},function(err,result){
-  
+
     if (result.length == 0){
       Item.insertMany(defaultItems,function(err){
         if(err){
@@ -63,8 +62,8 @@ app.get("/", function(req, res) {
     }else{
       res.render("list", {listTitle: "today", newListItems: result});
     }
-      
-      
+
+
   })
 
 
@@ -76,8 +75,8 @@ app.post("/", function(req, res){
   const i4=new Item({
     name:listedItem
   });
-  
-  
+
+
   if(req.body.list=="today"){
     i4.save();
     res.redirect("/")
@@ -89,7 +88,7 @@ app.post("/", function(req, res){
         res.redirect("/"+req.body.list)
     })
   }
-  
+
 });
 
 
